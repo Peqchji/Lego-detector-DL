@@ -9,7 +9,7 @@ from ultralytics.engine.results import Results
 
 from entity import BoundingBox
 
-from .adapter import AbstractObjectDetection
+from .port import AbstractObjectDetection
 
 
 class YoloObjectDetection(AbstractObjectDetection):

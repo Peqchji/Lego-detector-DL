@@ -3,7 +3,7 @@ import threading
 import logging
 import time
 from entity import InferenceResponse, Job
-from .adapter import AbstractJobHandler, AbstractObjectDetection
+from .port import AbstractJobHandler, AbstractObjectDetection
 
 class LegoDetector():
     def __init__(

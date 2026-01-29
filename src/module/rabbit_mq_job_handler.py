@@ -3,7 +3,6 @@ import logging
 import threading
 
 from collections.abc import Callable
-import time
 from typing import Tuple
 
 import pika
@@ -11,7 +10,7 @@ from common.constant import QueueName
 from common.utils import cal_backoff
 from entity import Job, InferenceResponse
 from .rabbit_mq_connector import RabbitMQConnector
-from .adapter import AbstractJobHandler
+from .port import AbstractJobHandler
 from pika.channel import Channel
 
 

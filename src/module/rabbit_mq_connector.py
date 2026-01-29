@@ -9,7 +9,7 @@ import pika.exceptions
 
 from common.constant import QueueName
 from common.utils import cal_backoff
-from module.adapter import AbstractMQConnector
+from module.port import AbstractMQConnector
 
 class RabbitMQConnector(AbstractMQConnector):
     _instance = None
